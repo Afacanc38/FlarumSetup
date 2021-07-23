@@ -21,13 +21,13 @@ Add PHP PPA and install dependencies:
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install php7.1 libapache2-mod-php7.1 php7.1-common php7.1-mbstring php7.1-xmlrpc php7.1-soap php7.1-mysql php7.1-gd php7.1-xml php7.1-cli php7.1-zip php7.1-curl wget zip unzip curl git -y
+sudo apt-get install php8.0 libapache2-mod-php8.0 php8.0-common php8.0-mbstring php8.0-xmlrpc php8.0-soap php8.0-mysql php8.0-gd php8.0-xml php8.0-cli php8.0-zip php8.0-curl wget zip unzip curl git -y
 ```
 
 Edit PHP configuration:
 
 ``````
-sudo nano /etc/php/7.1/apache2/php.ini
+sudo nano /etc/php/8.0/apache2/php.ini
 ``````
 
 And make sure the following are set to the correct value:
@@ -113,7 +113,7 @@ cd /var/www/html
 sudo rm -rf *
 #composer config -g repo.packagist composer https://packagist.laravel-china.org
 #use repo above in China if official repo is too slow
-composer create-project flarum/flarum . --stability=beta
+composer create-project flarum/flarum .
 ```
 
 Change owner to www-data and change perm to 755(avoid 777 in production environment)
