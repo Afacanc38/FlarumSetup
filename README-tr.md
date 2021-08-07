@@ -38,7 +38,7 @@ allow_url_fopen = On
 memory_limit = 4096M
 upload_max_file_size = 150M
 max_execution_time = 450
-date.timezone = Asia/Kolkata
+date.timezone = Europe/Istanbul
 ```
 
 Ardından servisleri başlatın:
