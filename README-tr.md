@@ -212,7 +212,7 @@ Ve aşağıdaki şekilde değiştirin.
 sudo nano .htaccess
 ```
 
-Aşağıdaki yapılandırmayı <IfModule mod_rewrite.c>'nin içerisine yazın.
+Aşağıdaki yapılandırmayı `<IfModule mod_rewrite.c>`'nin içerisine yazın.
 
 ```
 #start https redirect                                                                       
