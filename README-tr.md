@@ -105,11 +105,16 @@ Sonra `cd` komutu ile dizine girin ve her şeyi silin (dikkatle kullanın!) ve F
 cd /var/www/html
 sudo rm -rf *
 #composer config -g repo.packagist composer https://packagist.laravel-china.org
-#use repo above in China if official repo is too slow
+# Eğer Çin Cumhurriyeti'nde yaşıyorsanız ve bağlantı yavaş ise yukarıdaki komut ile Çin deposunu kullanın.
 composer create-project flarum/flarum .
 ```
+Flarum kurulumda dizinlerin yazılamadığını söylüyorsa (/var/www/html/flarum is not writable hatası) aşağıdaki komutu çalıştırın.
 
-Sonra izinleri 755 olarak değiştirin:
+```
+sudo chmod -r 777 /var/www/html/*
+```
+
+Kurulumdan sonra izinleri 755 olarak değiştirin:
 
 ```
 sudo chown -R www-data:www-data /var/www/html/
