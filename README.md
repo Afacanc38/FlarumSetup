@@ -45,9 +45,9 @@ Start Apache and MySQL services:
 
 ```
 sudo systemctl start apache2
-sudo systemctl start mysql
+sudo systemctl start mariadb
 sudo systemctl enable apache2
-sudo systemctl enable mysql
+sudo systemctl enable mariadb
 ```
 
 Then add security measures to MariaDB:
@@ -116,7 +116,13 @@ sudo rm -rf *
 composer create-project flarum/flarum .
 ```
 
-Change owner to www-data and change perm to 755(avoid 777 in production environment)
+If Flarum says that directories cannot be written during installation (/var/www/html/flarum is not writable error), run the following command.
+
+```
+sudo chmod -r 777 /var/www/html/*
+```
+
+Change owner to www-data and change perm to 755 (avoid 777 in production environment) after installing.
 
 ```
 sudo chown -R www-data:www-data /var/www/html/
