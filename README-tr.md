@@ -45,9 +45,9 @@ Ardından servisleri başlatın:
 
 ```
 sudo systemctl start apache2
-sudo systemctl start mysql
+sudo systemctl start mariadb
 sudo systemctl enable apache2
-sudo systemctl enable mysql
+sudo systemctl enable mariadb
 ```
 
 MariaDB'yi aşağıdaki gibi yapılandırın:
