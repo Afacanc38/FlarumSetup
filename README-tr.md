@@ -111,7 +111,7 @@ composer create-project flarum/flarum .
 Flarum kurulumda dizinlerin yazılamadığını söylüyorsa (/var/www/html/flarum is not writable hatası) aşağıdaki komutu çalıştırın.
 
 ```
-sudo chmod -r 777 /var/www/html/*
+sudo chmod -R 777 /var/www/html/*
 ```
 
 Kurulumdan sonra izinleri 755 olarak değiştirin:
