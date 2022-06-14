@@ -36,7 +36,7 @@ Ve değişkenleri aşağıdaki şekildeki gibi yapılandırın Eğer satırın b
 file_uploads = On
 allow_url_fopen = On
 memory_limit = 4096M
-upload_max_file_size = 150M
+upload_max_filesize = 150M
 max_execution_time = 450
 date.timezone = Europe/Istanbul
 ```
