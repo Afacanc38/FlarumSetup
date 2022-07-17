@@ -64,7 +64,7 @@ sudo mysql_secure_installation
 	Reload privilege tables now? [Y/n]: Y
 ```
 
-Güvenlik amacıyla veritabanındaki root kullanıcısını silin ve yeniden oluşturun:
+Rahat erişebilme amacıyla veritabanındaki root kullanıcısını silin ve yeniden oluşturun:
 
 ```
 sudo mysql -u root -p
